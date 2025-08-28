@@ -37,4 +37,259 @@
       "https://www.linkedin.com/in/ruben-munoz-docente/"
     ],
     "worksFor": { "@type": "Organization", "name": "Autónomo" },
-    "address
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Mairena del Aljarafe",
+      "addressRegion": "Sevilla",
+      "addressCountry": "ES"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Información y propuestas formativas",
+      "email": "rumuva1492@gmail.com",
+      "availableLanguage": ["es"]
+    }
+  }
+  </script>
+
+  <!-- Schema.org: Migas de pan (Breadcrumb) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Inicio","item":"https://rumuva.github.io/ruben-munoz-docente/"},
+      {"@type":"ListItem","position":2,"name":"Servicios","item":"https://rumuva.github.io/ruben-munoz-docente/#servicios"}
+    ]
+  }
+  </script>
+
+  <style>
+    :root{
+      --azul:#0b3a74;
+      --azul-osc:#072a55;
+      --naranja:#ff7a00;
+      --naranja-osc:#e66d00;
+      --crema:#fff6ea;
+      --gris:#6b7280;
+      --bg:#f7fafc;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;line-height:1.6;color:#111;background:var(--bg)}
+    a{color:var(--azul);text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid #e5e7eb}
+    .wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{width:32px;height:32px}
+    .brand strong{color:var(--azul);font-weight:800}
+    nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
+    nav a{font-weight:600;color:#111}
+    nav a.btn{background:var(--naranja);color:#fff;padding:.55rem .9rem;border-radius:999px}
+    nav a.btn:hover{background:var(--naranja-osc);text-decoration:none}
+
+    .hero{position:relative;background:linear-gradient(180deg,rgba(11,58,116,.75),rgba(11,58,116,.65)),url('assets/hero.jpg') center/cover no-repeat;color:#fff}
+    .hero .wrap{padding:80px 16px 92px}
+    .hero h1{font-size:clamp(28px,4.6vw,44px);line-height:1.15;margin:0 0 12px}
+    .hero p{font-size:clamp(16px,2.3vw,20px);max-width:840px;margin:10px 0 22px}
+    .cta{display:inline-flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-block;background:var(--naranja);color:#fff;padding:.8rem 1.05rem;border-radius:12px;font-weight:700}
+    .btn:hover{background:var(--naranja-osc);text-decoration:none}
+    .btn-sec{background:#fff;color:var(--azul);border:2px solid #fff}
+    .btn-sec:hover{background:#f1f5f9;border-color:#f1f5f9}
+
+    section{padding:56px 0}
+    h2{color:var(--azul);font-size:clamp(22px,3.2vw,30px);margin:0 0 18px}
+    .grid{display:grid;gap:18px}
+    @media(min-width:800px){.grid-2{grid-template-columns:1fr 1fr}.grid-3{grid-template-columns:repeat(3,1fr)}}
+
+    .card{background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:18px}
+    .pill{display:inline-flex;align-items:center;gap:8px;background:#eef2ff;color:var(--azul);font-weight:700;border-radius:999px;padding:.25rem .6rem;text-decoration:none}
+    .muted{color:var(--gris)}
+
+    /* Formulario */
+    form input, form textarea, form button{width:100%}
+    form input, form textarea{border:1px solid #e5e7eb;border-radius:10px;padding:.7rem .8rem;font:inherit}
+    form textarea{min-height:120px;resize:vertical}
+    form button{background:var(--azul);color:#fff;border:0;border-radius:12px;padding:.85rem 1.1rem;font-weight:800}
+    form button:hover{background:var(--azul-osc)}
+    .consent{display:flex;gap:10px;align-items:flex-start;font-size:.95rem}
+
+    /* CTA fijo */
+    .cta-fixed{position:fixed;right:16px;bottom:16px;background:var(--naranja);color:#fff;padding:.8rem 1rem;border-radius:999px;font-weight:800;box-shadow:0 10px 30px rgba(0,0,0,.2);z-index:60}
+    .cta-fixed:hover{background:var(--naranja-osc)}
+
+    footer{background:#fff;border-top:1px solid #e5e7eb;padding:28px 0;color:#111}
+    .foot{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+    .foot small{color:var(--gris)}
+    .foot .brand img{width:28px;height:28px}
+
+    /* Accesibilidad */
+    .sr-only-focusable{position:absolute;left:-9999px}
+    .sr-only-focusable:focus{left:8px;top:8px;background:#fff;padding:.5rem .75rem;border:2px solid #000;z-index:9999}
+    :focus-visible{outline:3px solid var(--naranja);outline-offset:2px}
+  </style>
+</head>
+<body>
+  <a href="#contenido" class="sr-only-focusable">Saltar al contenido</a>
+
+  <header>
+    <div class="wrap nav">
+      <div class="brand">
+        <img src="assets/logo.png" alt="Logotipo Rubén Muñoz" width="32" height="32" loading="eager" fetchpriority="high">
+        <strong>Rubén Muñoz</strong>
+        <span class="muted">Docente SSCE0110</span>
+      </div>
+      <nav aria-label="principal">
+        <ul>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#recursos">Recursos</a></li>
+          <li><a class="btn" href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" role="banner">
+    <div class="wrap">
+      <h1>Formación Profesional y Competencias Digitales para el Empleo</h1>
+      <p>Docente certificado en <strong>SSCE0110</strong>. Ayudo a personas y organizaciones a desarrollar competencias digitales y profesionales para acceder a un empleo digno, estable y alineado con el mercado.</p>
+      <div class="cta">
+        <a class="btn" href="#servicios">Ver programas disponibles</a>
+        <a class="btn btn-sec" href="#contacto">Pedir propuesta en 24&nbsp;h</a>
+      </div>
+    </div>
+  </section>
+
+  <main id="contenido" class="wrap">
+
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="grid grid-2">
+      <div>
+        <h2>Docente de FPE y diseñador instruccional</h2>
+        <p>Soy <strong>Rubén Muñoz</strong>, docente de la Formación Profesional para el Empleo con experiencia impartiendo cursos de 50 horas en competencias TIC, ofimática, productividad digital e introducción a la IA. Mi enfoque conecta la formación con las necesidades reales de las empresas.</p>
+        <ul>
+          <li>Especialista en <strong>competencias digitales</strong> y empleabilidad.</li>
+          <li>Metodologías activas y materiales propios (guías, infografías, flashcards).</li>
+          <li>Diseño instruccional orientado a resultados medibles.</li>
+        </ul>
+        <p class="muted">📍 Mairena del Aljarafe (Sevilla) · <a class="pill" rel="noopener" target="_blank" href="https://www.linkedin.com/in/ruben-munoz-docente/">LinkedIn</a></p>
+      </div>
+      <div class="card">
+        <img src="assets/portrait.jpg" alt="Retrato de Rubén Muñoz" width="960" height="1200" loading="lazy" decoding="async" style="width:100%;border-radius:12px">
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios">
+      <h2>Servicios</h2>
+      <div class="grid grid-3">
+        <article class="card">
+          <h3>Competencias Digitales para el Empleo</h3>
+          <p>Ofimática, nube, comunicación digital y seguridad personal. Itinerarios por niveles y práctica desde el primer día.</p>
+        </article>
+        <article class="card">
+          <h3>Docencia SSCE0110</h3>
+          <p>Planificación, impartición y evaluación continua. Materiales propios y seguimiento individualizado.</p>
+        </article>
+        <article class="card">
+          <h3>Diseño Instruccional</h3>
+          <p>Análisis de necesidades, objetivos medibles, actividades activas y evaluación por evidencias.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Recursos -->
+    <section id="recursos">
+      <h2>Recursos</h2>
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Tarjeta de presentación</h3>
+          <p>Descarga tu tarjeta visual para compartir.</p>
+          <p><a class="pill" href="assets/card.jpg" download>Descargar</a></p>
+        </div>
+        <div class="card">
+          <h3>LinkedIn</h3>
+          <p>Actualizaciones y publicaciones sobre FPE y competencias digitales.</p>
+          <p><a class="pill" rel="noopener" target="_blank" href="https://www.linkedin.com/in/ruben-munoz-docente/">Ir a LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="grid grid-2">
+      <div>
+        <h2>Contacto</h2>
+        <p>Cuéntame qué necesitas y te responderé en 24&nbsp;h.</p>
+        <form action="https://formsubmit.co/rumuva1492@gmail.com" method="POST">
+          <!-- Ajustes FormSubmit -->
+          <input type="hidden" name="_subject" value="Nuevo mensaje desde la web (GitHub Pages)">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="text" name="_honey" style="display:none">
+          <input type="hidden" name="_next" value="https://rumuva.github.io/ruben-munoz-docente/#contacto">
+
+          <label>Nombre
+            <input required type="text" name="nombre" autocomplete="name">
+          </label>
+          <br><br>
+          <label>Correo
+            <input required type="email" name="email" autocomplete="email">
+          </label>
+          <br><br>
+          <label>Mensaje
+            <textarea required name="mensaje" rows="5"></textarea>
+          </label>
+          <br><br>
+          <label class="consent">
+            <input required type="checkbox" name="consent">
+            <span>Acepto el tratamiento de mis datos para responder a la solicitud.
+              <a href="#privacidad">Política de Privacidad</a>.</span>
+          </label>
+          <br>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+      <div class="card">
+        <h3>Disponibilidad</h3>
+        <p>Presencial (Sevilla y alrededores) y online.</p>
+        <p class="muted">respondo habitualmente en menos de 24 h.</p>
+      </div>
+    </section>
+
+    <!-- Legal (resumen embebido) -->
+    <section id="privacidad">
+      <details class="card">
+        <summary><strong>Política de Privacidad (resumen)</strong></summary>
+        <p>Responsable: Rubén Muñoz (Docente SSCE0110). Finalidad: atender tu solicitud de información/servicios. Base jurídica: tu consentimiento y medidas precontractuales. Destinatarios: FormSubmit (envío del formulario), Google (Gmail/Drive). Conservación: 12 meses si no hay relación posterior. Derechos: acceso, rectificación, supresión, oposición, limitación y portabilidad (escríbeme a <a href="mailto:rumuva1492@gmail.com">rumuva1492@gmail.com</a>). Reclamación: AEPD.</p>
+      </details>
+      <br>
+      <details class="card">
+        <summary><strong>Aviso Legal</strong></summary>
+        <p>Web personal sin actividad de comercio electrónico. Contenidos con fines informativos sobre servicios docentes. Contacto: <a href="mailto:rumuva1492@gmail.com">rumuva1492@gmail.com</a>.</p>
+      </details>
+    </section>
+
+  </main>
+
+  <a class="cta-fixed" href="#contacto" aria-label="Ir al formulario de contacto">Contactar</a>
+
+  <footer>
+    <div class="wrap foot">
+      <div class="brand">
+        <img src="assets/logo.png" alt="Logotipo Rubén Muñoz" width="28" height="28" loading="lazy" decoding="async">
+        <strong>Rubén Muñoz</strong>
+        <span class="muted">Docente SSCE0110</span>
+      </div>
+      <small>© <span id="y"></span> · Sevilla · <a href="https://www.linkedin.com/in/ruben-munoz-docente/" target="_blank" rel="noopener">LinkedIn</a></small>
+    </div>
+  </footer>
+
+  <script>
+    // Año dinámico
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
