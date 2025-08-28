@@ -184,10 +184,14 @@
           <li>📞 607 649 323</li>
         </ul>
 
-        <!-- Formulario sin backend (formsubmit.co) -->
+        <!-- Formulario con consentimiento RGPD y mejoras de UX -->
         <form action="https://formsubmit.co/rumuva1492@gmail.com" method="POST" class="card" style="margin-top:18px">
           <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_subject" value="Nuevo mensaje desde la web (GitHub Pages)">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_autoresponse" value="¡Gracias por tu mensaje! Te responderé en cuanto lo lea. — Rubén Muñoz">
+          <input type="hidden" name="_next" value="https://rumuva.github.io/ruben-munoz-docente/?enviado=1#contacto">
+          <input type="text" name="_honey" style="display:none">
           <label>Nombre
             <input required name="nombre">
           </label>
@@ -196,6 +200,10 @@
           </label>
           <label>Mensaje
             <textarea required name="mensaje" rows="5"></textarea>
+          </label>
+          <label style="display:flex;gap:8px;align-items:flex-start;margin:10px 0">
+            <input type="checkbox" name="acepto" required>
+            <span>He leído y acepto la <a href="#privacidad">Política de Privacidad</a>.</span>
           </label>
           <button class="cta" type="submit">Enviar</button>
         </form>
@@ -216,13 +224,51 @@
         <span class="pill">📍 Mairena del Aljarafe (Sevilla)</span>
       </div>
       <div class="tiny">Hecho con HTML/CSS. Hosting gratuito en GitHub Pages.</div>
+      <div class="tiny" style="margin-top:8px">
+        <a href="#privacidad" style="color:#cbd5e1">Política de Privacidad</a> ·
+        <a href="#aviso-legal" style="color:#cbd5e1">Aviso legal</a>
+      </div>
     </div>
   </footer>
+
+  <!-- Secciones legales -->
+  <section id="privacidad" style="background:#F5F7FA;padding:48px 16px">
+    <div class="wrap card" style="max-width:900px;margin:auto">
+      <h2 style="margin-top:0">Política de Privacidad</h2>
+      <p><strong>Responsable:</strong> Rubén Muñoz (Docente SSCE0110). Correo: <a href="mailto:rumuva1492@gmail.com">rumuva1492@gmail.com</a>.</p>
+      <p><strong>Finalidades:</strong> atender solicitudes de información, propuestas de colaboración y contacto profesional.</p>
+      <p><strong>Base jurídica:</strong> consentimiento al enviar el formulario y/o interés legítimo/precontractual para responder a la solicitud.</p>
+      <p><strong>Datos tratados:</strong> nombre, correo y contenido del mensaje. No se solicitan categorías especiales.</p>
+      <p><strong>Destinatarios/encargados:</strong> servicios de envío de formularios (FormSubmit) y correo (Google/Gmail) como <em>encargados del tratamiento</em>. Pueden existir transferencias internacionales; se amparan en Cláusulas Contractuales Tipo u otros mecanismos del RGPD.</p>
+      <p><strong>Conservación:</strong> durante el tiempo necesario para atender la solicitud y, como máximo, 12 meses si no se establece relación profesional.</p>
+      <p><strong>Derechos:</strong> acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a <a href="mailto:rumuva1492@gmail.com">rumuva1492@gmail.com</a>. Puedes reclamar ante la Agencia Española de Protección de Datos.</p>
+      <p><strong>WhatsApp:</strong> si contactas por WhatsApp, tus datos se tratarán a través de WhatsApp/Meta (posibles transferencias internacionales). Puedes usar el correo si no deseas emplear este canal.</p>
+      <p><strong>Cookies:</strong> este sitio no utiliza cookies de analítica o publicidad; solo las técnicas imprescindibles que pueda requerir el envío del formulario.</p>
+    </div>
+  </section>
+
+  <section id="aviso-legal" style="padding:48px 16px">
+    <div class="wrap card" style="max-width:900px;margin:auto">
+      <h2 style="margin-top:0">Aviso legal</h2>
+      <p>Sitio titularidad de <strong>Rubén Muñoz</strong> (Docente SSCE0110), con finalidad informativa y de promoción de servicios docentes y de diseño instruccional.</p>
+      <p>Contacto: <a href="mailto:rumuva1492@gmail.com">rumuva1492@gmail.com</a>. Ubicación: Mairena del Aljarafe (Sevilla).</p>
+      <p>Queda prohibida la reproducción de contenidos sin autorización. Este sitio puede enlazar a terceros; no me responsabilizo de sus políticas o contenidos.</p>
+    </div>
+  </section>
 
   <!-- Botones flotantes -->
   <a class="fab fab-wa" href="https://wa.me/34607649323?text=Hola%20Rub%C3%A9n,%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20tus%20servicios%20de%20FPE%20y%20competencias%20digitales." target="_blank" aria-label="WhatsApp">WA</a>
   <a class="fab fab-in" href="https://www.linkedin.com/in/ruben-munoz-docente/" target="_blank" aria-label="LinkedIn">in</a>
 
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script>
+    // Año en el pie
+    document.getElementById('y').textContent = new Date().getFullYear();
+    // Aviso tras enviar el formulario
+    const p = new URLSearchParams(location.search);
+    if (p.get('enviado') === '1') {
+      alert('¡Gracias! He recibido tu mensaje y te responderé en breve.');
+      history.replaceState({}, '', location.pathname + '#contacto');
+    }
+  </script>
 </body>
 </html>
