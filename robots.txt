@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+# Reemplaza TU_USUARIO y TU_REPO tras publicar
+Sitemap: https://TU_USUARIO.github.io/TU_REPO/sitemap.xml

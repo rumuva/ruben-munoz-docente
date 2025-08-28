@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Reemplaza TU_USUARIO y TU_REPO tras publicar -->
+  <url><loc>https://TU_USUARIO.github.io/TU_REPO/</loc></url>
+  <url><loc>https://TU_USUARIO.github.io/TU_REPO/#sobre-mi</loc></url>
+  <url><loc>https://TU_USUARIO.github.io/TU_REPO/#servicios</loc></url>
+  <url><loc>https://TU_USUARIO.github.io/TU_REPO/#recursos</loc></url>
+  <url><loc>https://TU_USUARIO.github.io/TU_REPO/#contacto</loc></url>
+</urlset>
