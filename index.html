@@ -1,30 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#0b3a74">
-
-  <!-- SEO básico -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Rubén Muñoz · Docente SSCE0110 | Competencias Digitales y FPE</title>
-  <meta name="description" content="Docente certificado en SSCE0110. Formación Profesional para el Empleo y competencias digitales en Sevilla y online. Enfoque práctico, empleabilidad y materiales propios.">
-  <link rel="canonical" href="https://rumuva.github.io/ruben-munoz-docente/">
+  <meta name="description" content="Docente certificado SSCE0110. Competencias digitales, ofimática, diseño instruccional y FPE en Sevilla y online." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="assets/style.css" />
 
-  <!-- Open Graph / Twitter -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Rubén Muñoz · Docente SSCE0110 | Competencias Digitales y FPE">
-  <meta property="og:description" content="Docente certificado en SSCE0110. Formación Profesional para el Empleo y competencias digitales en Sevilla y online. Enfoque práctico, empleabilidad y materiales propios.">
-  <meta property="og:url" content="https://rumuva.github.io/ruben-munoz-docente/">
-  <meta property="og:image" content="https://rumuva.github.io/ruben-munoz-docente/assets/og-image.jpg">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Rubén Muñoz · Docente SSCE0110 | Competencias Digitales y FPE">
-  <meta name="twitter:description" content="Docente certificado en SSCE0110. Formación Profesional para el Empleo y competencias digitales en Sevilla y online. Enfoque práctico, empleabilidad y materiales propios.">
-  <meta name="twitter:image" content="https://rumuva.github.io/ruben-munoz-docente/assets/og-image.jpg">
-
-  <link rel="icon" href="assets/favicon.ico" sizes="any">
-
-  <!-- Schema.org: Perfil (Person) -->
+  <!-- Schema.org Person -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -32,298 +19,148 @@
     "name": "Rubén Muñoz",
     "jobTitle": "Docente SSCE0110",
     "url": "https://rumuva.github.io/ruben-munoz-docente/",
-    "image": "https://rumuva.github.io/ruben-munoz-docente/assets/portrait.jpg",
-    "sameAs": [
-      "https://www.linkedin.com/in/ruben-munoz-docente/"
-    ],
+    "image": "https://rumuva.github.io/ruben-munoz-docente/assets/portrait-hero.jpg",
     "worksFor": { "@type": "Organization", "name": "Autónomo" },
+    "sameAs": ["https://www.linkedin.com/in/ruben-munoz-docente/"],
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Mairena del Aljarafe",
       "addressRegion": "Sevilla",
-      "addressCountry": "ES"
-    },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "Información y propuestas formativas",
-      "email": "rumuva1492@gmail.com",
-      "availableLanguage": ["es"]
+      "addressCountry": "España"
     }
   }
   </script>
-
-  <!-- Schema.org: Migas de pan (Breadcrumb) -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"BreadcrumbList",
-    "itemListElement":[
-      {"@type":"ListItem","position":1,"name":"Inicio","item":"https://rumuva.github.io/ruben-munoz-docente/"},
-      {"@type":"ListItem","position":2,"name":"Servicios","item":"https://rumuva.github.io/ruben-munoz-docente/#servicios"}
-    ]
-  }
-  </script>
-
-  <style>
-    :root{
-      --azul:#0b3a74;
-      --azul-osc:#072a55;
-      --naranja:#ff7a00;
-      --naranja-osc:#e66d00;
-      --crema:#fff6ea;
-      --gris:#6b7280;
-      --bg:#f7fafc;
-    }
-    *{box-sizing:border-box}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;line-height:1.6;color:#111;background:var(--bg)}
-    a{color:var(--azul);text-decoration:none}
-    a:hover{text-decoration:underline}
-    header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid #e5e7eb}
-    .wrap{max-width:1080px;margin:0 auto;padding:0 16px}
-    .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
-    .brand{display:flex;align-items:center;gap:12px}
-    .brand img{width:32px;height:32px}
-    .brand strong{color:var(--azul);font-weight:800}
-    nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
-    nav a{font-weight:600;color:#111}
-    nav a.btn{background:var(--naranja);color:#fff;padding:.55rem .9rem;border-radius:999px}
-    nav a.btn:hover{background:var(--naranja-osc);text-decoration:none}
-
-    .hero{position:relative;background:linear-gradient(180deg,rgba(11,58,116,.75),rgba(11,58,116,.65)),url('assets/hero.jpg') center/cover no-repeat;color:#fff}
-    .hero .wrap{padding:80px 16px 92px}
-    .hero h1{font-size:clamp(28px,4.6vw,44px);line-height:1.15;margin:0 0 12px}
-    .hero p{font-size:clamp(16px,2.3vw,20px);max-width:840px;margin:10px 0 22px}
-    .cta{display:inline-flex;gap:12px;flex-wrap:wrap}
-    .btn{display:inline-block;background:var(--naranja);color:#fff;padding:.8rem 1.05rem;border-radius:12px;font-weight:700}
-    .btn:hover{background:var(--naranja-osc);text-decoration:none}
-    .btn-sec{background:#fff;color:var(--azul);border:2px solid #fff}
-    .btn-sec:hover{background:#f1f5f9;border-color:#f1f5f9}
-
-    section{padding:56px 0}
-    h2{color:var(--azul);font-size:clamp(22px,3.2vw,30px);margin:0 0 18px}
-    .grid{display:grid;gap:18px}
-    @media(min-width:800px){.grid-2{grid-template-columns:1fr 1fr}.grid-3{grid-template-columns:repeat(3,1fr)}}
-
-    .card{background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:18px}
-    .pill{display:inline-flex;align-items:center;gap:8px;background:#eef2ff;color:var(--azul);font-weight:700;border-radius:999px;padding:.25rem .6rem;text-decoration:none}
-    .muted{color:var(--gris)}
-
-    /* Formulario */
-    form input, form textarea, form button{width:100%}
-    form input, form textarea{border:1px solid #e5e7eb;border-radius:10px;padding:.7rem .8rem;font:inherit}
-    form textarea{min-height:120px;resize:vertical}
-    form button{background:var(--azul);color:#fff;border:0;border-radius:12px;padding:.85rem 1.1rem;font-weight:800}
-    form button:hover{background:var(--azul-osc)}
-    .consent{display:flex;gap:10px;align-items:flex-start;font-size:.95rem}
-
-    /* CTA fijo */
-    .cta-fixed{position:fixed;right:16px;bottom:16px;background:var(--naranja);color:#fff;padding:.8rem 1rem;border-radius:999px;font-weight:800;box-shadow:0 10px 30px rgba(0,0,0,.2);z-index:60}
-    .cta-fixed:hover{background:var(--naranja-osc)}
-
-    /* Botones flotantes: WhatsApp + LinkedIn */
-    .float-launchers{
-      position:fixed; right:16px; bottom:92px; /* 92px para no tapar el CTA fijo */
-      display:flex; flex-direction:column; gap:12px; z-index:60;
-    }
-    .fab{
-      width:52px; height:52px; border-radius:50%;
-      display:flex; align-items:center; justify-content:center;
-      color:#fff; box-shadow:0 10px 30px rgba(0,0,0,.25);
-      transition:transform .12s ease;
-    }
-    .fab:hover{ transform:translateY(-2px) scale(1.03); text-decoration:none }
-    .fab.whatsapp{ background:#25D366 }   /* verde WhatsApp */
-    .fab.linkedin{ background:#0A66C2 }   /* azul LinkedIn */
-    .fab svg{ width:26px; height:26px }
-
-    footer{background:#fff;border-top:1px solid #e5e7eb;padding:28px 0;color:#111}
-    .foot{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
-    .foot small{color:var(--gris)}
-    .foot .brand img{width:28px;height:28px}
-
-    /* Accesibilidad */
-    .sr-only-focusable{position:absolute;left:-9999px}
-    .sr-only-focusable:focus{left:8px;top:8px;background:#fff;padding:.5rem .75rem;border:2px solid #000;z-index:9999}
-    :focus-visible{outline:3px solid var(--naranja);outline-offset:2px}
-  </style>
 </head>
 <body>
-  <a href="#contenido" class="sr-only-focusable">Saltar al contenido</a>
+  <a class="skip" href="#main">Saltar al contenido</a>
 
-  <header>
-    <div class="wrap nav">
+  <header class="site-header">
+    <div class="container header-inner">
       <div class="brand">
-        <img src="assets/logo.png" alt="Logotipo Rubén Muñoz" width="32" height="32" loading="eager" fetchpriority="high">
-        <strong>Rubén Muñoz</strong>
-        <span class="muted">Docente SSCE0110</span>
+        <img src="assets/logo.svg" alt="Logotipo Rubén Muñoz" class="logo" />
+        <div class="brand-text">
+          <strong>Rubén Muñoz</strong>
+          <span>Docente SSCE0110</span>
+        </div>
       </div>
-      <nav aria-label="principal">
-        <ul>
-          <li><a href="#sobre-mi">Sobre mí</a></li>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#recursos">Recursos</a></li>
-          <li><a class="btn" href="#contacto">Contacto</a></li>
-        </ul>
+      <nav class="nav">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#recursos">Recursos</a>
+        <a class="btn btn-outline" href="#contacto">Contacto</a>
       </nav>
     </div>
   </header>
 
-  <section class="hero" role="banner">
-    <div class="wrap">
-      <h1>Formación Profesional y Competencias Digitales para el Empleo</h1>
-      <p>Docente certificado en <strong>SSCE0110</strong>. Ayudo a personas y organizaciones a desarrollar competencias digitales y profesionales para acceder a un empleo digno, estable y alineado con el mercado.</p>
-      <div class="cta">
-        <a class="btn" href="#servicios">Ver programas disponibles</a>
-        <a class="btn btn-sec" href="#contacto">Pedir propuesta en 24&nbsp;h</a>
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1>Formación Profesional y Competencias Digitales para el Empleo</h1>
+        <p>Docente certificado en SSCE0110. Ayudo a personas y organizaciones a desarrollar competencias digitales y profesionales para acceder a un empleo digno, estable y alineado con el mercado.</p>
+        <div class="cta-row">
+          <a class="btn" href="#servicios">Ver programas disponibles</a>
+          <a class="btn btn-ghost" href="#contacto">Pedir propuesta en 24 h</a>
+        </div>
+        <p class="meta">Mairena del Aljarafe (Sevilla) · <a href="https://www.linkedin.com/in/ruben-munoz-docente/" target="_blank" rel="noopener">LinkedIn</a></p>
+      </div>
+      <div class="hero-media">
+        <img src="https://rumuva.github.io/ruben-munoz-docente/assets/portrait-hero.jpg" alt="Retrato de Rubén Muñoz" />
       </div>
     </div>
   </section>
 
-  <main id="contenido" class="wrap">
-
-    <!-- Sobre mí -->
-    <section id="sobre-mi" class="grid grid-2">
-      <div>
-        <h2>Docente de FPE y diseñador instruccional</h2>
-        <p>Soy <strong>Rubén Muñoz</strong>, docente de la Formación Profesional para el Empleo con experiencia impartiendo cursos de 50 horas en competencias TIC, ofimática, productividad digital e introducción a la IA. Mi enfoque conecta la formación con las necesidades reales de las empresas.</p>
-        <ul>
-          <li>Especialista en <strong>competencias digitales</strong> y empleabilidad.</li>
-          <li>Metodologías activas y materiales propios (guías, infografías, flashcards).</li>
-          <li>Diseño instruccional orientado a resultados medibles.</li>
-        </ul>
-        <p class="muted">📍 Mairena del Aljarafe (Sevilla) · <a class="pill" rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/ruben-munoz-docente/">LinkedIn</a></p>
-      </div>
-      <div class="card">
-        <img src="assets/portrait.jpg" alt="Retrato de Rubén Muñoz" width="960" height="1200" loading="lazy" decoding="async" style="width:100%;border-radius:12px">
-      </div>
+  <main id="main">
+    <section id="sobre-mi" class="container card">
+      <h2>Docente de FPE y diseñador instruccional</h2>
+      <p>Soy Rubén Muñoz, docente de la Formación Profesional para el Empleo con experiencia impartiendo cursos de 50 horas en competencias TIC, ofimática, productividad digital e introducción a la IA. Mi enfoque conecta la formación con las necesidades reales de las empresas.</p>
+      <ul>
+        <li>Especialista en competencias digitales y empleabilidad.</li>
+        <li>Metodologías activas y materiales propios (guías, infografías, flashcards).</li>
+        <li>Diseño instruccional orientado a resultados medibles.</li>
+      </ul>
     </section>
 
-    <!-- Servicios -->
-    <section id="servicios">
-      <h2>Servicios</h2>
-      <div class="grid grid-3">
-        <article class="card">
-          <h3>Competencias Digitales para el Empleo</h3>
-          <p>Ofimática, nube, comunicación digital y seguridad personal. Itinerarios por niveles y práctica desde el primer día.</p>
-        </article>
-        <article class="card">
-          <h3>Docencia SSCE0110</h3>
-          <p>Planificación, impartición y evaluación continua. Materiales propios y seguimiento individualizado.</p>
-        </article>
-        <article class="card">
-          <h3>Diseño Instruccional</h3>
-          <p>Análisis de necesidades, objetivos medibles, actividades activas y evaluación por evidencias.</p>
-        </article>
-      </div>
+    <section id="servicios" class="container grid-3">
+      <article class="card">
+        <h3>Competencias Digitales para el Empleo</h3>
+        <p>Ofimática, nube, comunicación digital y seguridad personal. Itinerarios por niveles y práctica desde el primer día.</p>
+      </article>
+      <article class="card">
+        <h3>Docencia SSCE0110</h3>
+        <p>Planificación, impartición y evaluación continua. Materiales propios y seguimiento individualizado.</p>
+      </article>
+      <article class="card">
+        <h3>Diseño Instruccional</h3>
+        <p>Análisis de necesidades, objetivos medibles, actividades activas y evaluación por evidencias.</p>
+      </article>
     </section>
 
-    <!-- Recursos -->
-    <section id="recursos">
-      <h2>Recursos</h2>
-      <div class="grid grid-2">
-        <div class="card">
-          <h3>Tarjeta de presentación</h3>
-          <p>Descarga tu tarjeta visual para compartir.</p>
-          <p><a class="pill" href="assets/card.jpg" download>Descargar</a></p>
-        </div>
-        <div class="card">
-          <h3>LinkedIn</h3>
-          <p>Actualizaciones y publicaciones sobre FPE y competencias digitales.</p>
-          <p><a class="pill" rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/ruben-munoz-docente/">Ir a LinkedIn</a></p>
-        </div>
-      </div>
+    <section id="recursos" class="container grid-2">
+      <article class="card">
+        <h3>Tarjeta de presentación</h3>
+        <p>Descarga tu tarjeta visual para compartir.</p>
+        <a class="btn btn-small" href="https://rumuva.github.io/ruben-munoz-docente/assets/tarjeta.pdf" target="_blank" rel="noopener">Descargar</a>
+      </article>
+      <article class="card">
+        <h3>LinkedIn</h3>
+        <p>Actualizaciones y publicaciones sobre FPE y competencias digitales.</p>
+        <a class="btn btn-small btn-outline" href="https://www.linkedin.com/in/ruben-munoz-docente/" target="_blank" rel="noopener">Ir a LinkedIn</a>
+      </article>
     </section>
 
-    <!-- Contacto -->
-    <section id="contacto" class="grid grid-2">
-      <div>
-        <h2>Contacto</h2>
-        <p>Cuéntame qué necesitas y te responderé en 24&nbsp;h.</p>
-        <form action="https://formsubmit.co/rumuva1492@gmail.com" method="POST">
-          <!-- Ajustes FormSubmit -->
-          <input type="hidden" name="_subject" value="Nuevo mensaje desde la web (GitHub Pages)">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_template" value="table">
-          <input type="text" name="_honey" style="display:none">
-          <input type="hidden" name="_next" value="https://rumuva.github.io/ruben-munoz-docente/#contacto">
+    <section id="contacto" class="container card">
+      <h2>Contacto</h2>
+      <p>Cuéntame qué necesitas y te responderé en 24&nbsp;h.</p>
+      <form action="https://formsubmit.co/rumuva1492@gmail.com" method="POST" class="grid-2 form">
+        <input type="hidden" name="_captcha" value="false">
+        <label>Nombre
+          <input type="text" name="nombre" required>
+        </label>
+        <label>Correo
+          <input type="email" name="correo" required>
+        </label>
+        <label class="full">Mensaje
+          <textarea name="mensaje" rows="5" required></textarea>
+        </label>
+        <label class="check full">
+          <input type="checkbox" required> Acepto el tratamiento de mis datos para responder a la solicitud. <a href="#privacidad">Política de Privacidad</a>.
+        </label>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
 
-          <label>Nombre
-            <input required type="text" name="nombre" autocomplete="name">
-          </label>
-          <br><br>
-          <label>Correo
-            <input required type="email" name="email" autocomplete="email">
-          </label>
-          <br><br>
-          <label>Mensaje
-            <textarea required name="mensaje" rows="5"></textarea>
-          </label>
-          <br><br>
-          <label class="consent">
-            <input required type="checkbox" name="consent">
-            <span>Acepto el tratamiento de mis datos para responder a la solicitud.
-              <a href="#privacidad">Política de Privacidad</a>.</span>
-          </label>
-          <br>
-          <button type="submit">Enviar</button>
-        </form>
-      </div>
-      <div class="card">
+      <div class="disponibilidad">
         <h3>Disponibilidad</h3>
-        <p>Presencial (Sevilla y alrededores) y online.</p>
-        <p class="muted">Respondo habitualmente en menos de 24 h.</p>
+        <p>Presencial (Sevilla y alrededores) y online. Respondo habitualmente en menos de 24&nbsp;h.</p>
+      </div>
+
+      <div class="social-inline">
+        <a class="icon" href="https://wa.me/34607649323" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a class="icon" href="https://www.linkedin.com/in/ruben-munoz-docente/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
       </div>
     </section>
-
-    <!-- Legal (resumen embebido) -->
-    <section id="privacidad">
-      <details class="card">
-        <summary><strong>Política de Privacidad (resumen)</strong></summary>
-        <p>Responsable: Rubén Muñoz (Docente SSCE0110). Finalidad: atender tu solicitud de información/servicios. Base jurídica: tu consentimiento y medidas precontractuales. Destinatarios: FormSubmit (envío del formulario), Google (Gmail/Drive). Conservación: 12 meses si no hay relación posterior. Derechos: acceso, rectificación, supresión, oposición, limitación y portabilidad (escríbeme a <a href="mailto:rumuva1492@gmail.com">rumuva1492@gmail.com</a>). Reclamación: AEPD.</p>
-      </details>
-      <br>
-      <details class="card">
-        <summary><strong>Aviso Legal</strong></summary>
-        <p>Web personal sin actividad de comercio electrónico. Contenidos con fines informativos sobre servicios docentes. Contacto: <a href="mailto:rumuva1492@gmail.com">rumuva1492@gmail.com</a>.</p>
-      </details>
-    </section>
-
   </main>
 
-  <!-- CTA fijo -->
-  <a class="cta-fixed" href="#contacto" aria-label="Ir al formulario de contacto">Contactar</a>
-
-  <!-- Lanzadores flotantes (WhatsApp + LinkedIn) -->
-  <div class="float-launchers" aria-label="Accesos rápidos">
-    <!-- WhatsApp: sustituye 34607649323 por tu número con prefijo país (sin + y sin espacios) -->
-    <a class="fab whatsapp"
-       href="https://wa.me/34607649323?text=Hola%20Rub%C3%A9n%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20tus%20programas%20de%20formaci%C3%B3n."
-       target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp">
-      <svg viewBox="0 0 448 512" aria-hidden="true"><path fill="currentColor" d="M380.9 97.1C339 55.2 283.1 32 224.1 32 106.5 32 8 130.5 8 248c0 43.5 11.4 85.7 33.1 122.8L0 480l112.6-41.1c35.5 19.5 75.7 29.8 116.5 29.8h.1c117.6 0 216.1-98.5 216.1-216 0-59-23.2-114.9-64.1-155.8zM224.2 438.4h-.1c-36.6 0-72.4-9.9-103.7-28.6l-7.4-4.4-66.8 24.4 23.9-68.8-4.8-7.1C47.6 321.8 36 285.8 36 248 36 142.6 118.6 60 224.1 60c53 0 102.8 20.6 140.2 58 37.3 37.4 57.9 87.2 57.9 140.1 0 109.6-89.5 200.3-198 200.3zm115.3-146.9c-6.3-3.2-37-18.2-42.7-20.3-5.8-2.1-10-3.2-14.3 3.2-4.2 6.3-16.4 20.3-20.1 24.5-3.7 4.2-7.4 4.7-13.7 1.6-6.3-3.2-26.6-9.8-50.7-31.4-18.7-16.6-31.4-37.1-35.1-43.4-3.7-6.3-.4-9.7 2.8-12.9 2.9-2.9 6.3-7.4 9.5-11.1 3.2-3.7 4.2-6.3 6.3-10.5 2.1-4.2 1.1-7.9-.5-11.1-1.6-3.2-14.3-34.6-19.6-47.3-5.2-12.5-10.5-10.8-14.3-11-3.7-.2-8.1-.2-12.3-.2s-11.4 1.6-17.4 7.9c-6 6.3-22.8 22.3-22.8 54.3s23.4 63 26.6 67.3c3.2 4.2 45.9 70.1 111.3 98.4 15.5 6.7 27.6 10.7 37 13.7 15.6 5 29.8 4.3 41 2.6 12.5-1.9 37-15.1 42.2-29.7 5.2-14.6 5.2-27.1 3.7-29.7-1.6-2.7-5.8-4.2-12.1-7.4z"/></svg>
-    </a>
-
-    <!-- LinkedIn -->
-    <a class="fab linkedin"
-       href="https://www.linkedin.com/in/ruben-munoz-docente/"
-       target="_blank" rel="noopener noreferrer" aria-label="Abrir perfil de LinkedIn">
-      <svg viewBox="0 0 448 512" aria-hidden="true"><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zm-46.44-339a53.93 53.93 0 1 1 53.9-53.9 53.94 53.94 0 0 1-53.9 53.9zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.24-79.2-48.3 0-55.7 37.7-55.7 76.6V448h-92.7V148.9h88.9v40.8h1.3c12.4-23.5 42.7-48.2 87.9-48.2 94 0 111.3 61.9 111.3 142.3V448z"/></svg>
-    </a>
-  </div>
-
-  <footer>
-    <div class="wrap foot">
-      <div class="brand">
-        <img src="assets/logo.png" alt="Logotipo Rubén Muñoz" width="28" height="28" loading="lazy" decoding="async">
-        <strong>Rubén Muñoz</strong>
-        <span class="muted">Docente SSCE0110</span>
+  <footer class="site-footer">
+    <div class="container">
+      <div id="privacidad" class="legal card">
+        <h3>Política de Privacidad (resumen)</h3>
+        <p><strong>Responsable:</strong> Rubén Muñoz (Docente SSCE0110). <strong>Finalidad:</strong> atender tu solicitud de información/servicios. <strong>Base jurídica:</strong> tu consentimiento y medidas precontractuales. <strong>Destinatarios:</strong> FormSubmit (envío del formulario), Google (Gmail/Drive). <strong>Conservación:</strong> 12 meses si no hay relación posterior. <strong>Derechos:</strong> acceso, rectificación, supresión, oposición, limitación y portabilidad (escríbeme a <a href="mailto:rumuva1492@gmail.com">rumuva1492@gmail.com</a>). <strong>Reclamación:</strong> AEPD.</p>
+        <p><strong>Aviso Legal:</strong> Web personal sin actividad de comercio electrónico. Contenidos con fines informativos sobre servicios docentes. Contacto: <a href="mailto:rumuva1492@gmail.com">rumuva1492@gmail.com</a>.</p>
       </div>
-      <small>© <span id="y"></span> · Sevilla · <a href="https://www.linkedin.com/in/ruben-munoz-docente/" target="_blank" rel="noopener noreferrer">LinkedIn</a></small>
+
+      <div class="footbase">
+        <div class="brand-mini">
+          <img src="assets/logo.svg" alt="" />
+          <span>Rubén Muñoz · Docente SSCE0110</span>
+        </div>
+        <div class="place">© 2025 · Sevilla · <a href="https://www.linkedin.com/in/ruben-munoz-docente/" target="_blank" rel="noopener">LinkedIn</a></div>
+      </div>
+
+      <div class="footer-social">
+        <a class="icon" href="https://wa.me/34607649323" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a class="icon" href="https://www.linkedin.com/in/ruben-munoz-docente/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
     </div>
   </footer>
-
-  <script>
-    // Año dinámico
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
