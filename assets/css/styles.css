@@ -7,3 +7,14 @@
 @media print{header,.hero-actions,.filter-list,.contact form,.privacy-section,.footer-links,.copy-email,.toast{display:none!important}.section,.contact{padding:25px 0}.container{padding:0 15px}.hero-grid{gap:30px}.portrait{height:300px}.section-title,h2{font-size:28px}.project{break-inside:avoid}body{background:white;font-size:11px}}
 
 nav .nav-contact[aria-current]{color:white}
+
+/* Retrato con transparencia, integrado sobre el color de la página. */
+.portrait{height:auto;background:transparent;border-radius:0;overflow:visible}
+.portrait>img{height:515px;object-fit:contain;object-position:center bottom}
+.portrait figcaption{position:static;background:none;color:var(--muted);padding:12px 0 0;border-top:1px solid var(--line)}
+.portrait figcaption b{color:var(--ink)}
+@media(min-width:1500px){.portrait{height:auto}.portrait>img{height:550px}}
+@media(max-width:1000px){.portrait{height:auto}.portrait>img{height:500px}}
+@media(max-width:760px){.portrait{height:auto;border-radius:0}.portrait>img{height:410px}}
+@media(max-width:380px){.portrait{height:auto}.portrait>img{height:370px}}
+@media print{.portrait>img{height:300px}}
