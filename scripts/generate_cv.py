@@ -20,8 +20,7 @@ styles={
 }
 def P(s,style='body'):return Paragraph(s,styles[style])
 def header(c,page):
- c.setFillColor(colors.HexColor(RED)); c.roundRect(42,752,47,47,8,fill=1,stroke=0)
- c.setFillColor(colors.white);c.setFont('DVB',17);c.drawCentredString(65.5,768,'RM')
+ c.drawImage(str(ROOT/'assets/images/logo-ruben-munoz-docente.png'),42,748,width=40,height=51.61,mask='auto')
  c.setFillColor(colors.HexColor(INK));c.setFont('DVB',21);c.drawString(102,781,'Rubén Muñoz Valadés')
  c.setFillColor(colors.HexColor(RED));c.setFont('DVB',9);c.drawString(102,763,'DOCENTE FPE · OFIMÁTICA · IA EDUCATIVA')
  c.setFillColor(colors.HexColor(MUTED));c.setFont('DV',8.7)
