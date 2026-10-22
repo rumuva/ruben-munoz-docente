@@ -5,9 +5,6 @@
     document.addEventListener('keydown',e=>{if(e.key==='Escape'&&menu.getAttribute('aria-expanded')==='true'){nav.dataset.open='false';menu.setAttribute('aria-expanded','false');menu.focus()}});
     const filters=[...document.querySelectorAll('[data-filter]')],projects=[...document.querySelectorAll('[data-category]')];
     filters.forEach(b=>b.addEventListener('click',()=>{filters.forEach(f=>f.setAttribute('aria-pressed',String(f===b)));projects.forEach(p=>p.hidden=b.dataset.filter!=='all'&&p.dataset.category!==b.dataset.filter);const count=projects.filter(p=>!p.hidden).length;document.querySelector('#filter-status').textContent=`${count} ${count===1?'muestra disponible':'muestras disponibles'}`;}));
-    let opener=null;
-    document.querySelectorAll('[data-dialog]').forEach(b=>b.addEventListener('click',()=>{opener=b;document.getElementById(b.dataset.dialog).showModal()}));
-    document.querySelectorAll('dialog').forEach(d=>{d.querySelector('[data-close]').addEventListener('click',()=>d.close());d.addEventListener('close',()=>{const notice=d.querySelector('#toast');if(notice){notice.textContent='';document.body.append(notice)}if(opener)opener.focus()});d.addEventListener('click',e=>{if(e.target===d){const r=d.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)d.close()}})});
     const sales=[['Cuadernos','Sevilla',240],['Carpetas','Aljarafe',180],['Bolígrafos','Sevilla',120],['Archivadores','Aljarafe',300],['Folios','Sevilla',160],['Agendas','Aljarafe',200]];
     const euro=n=>new Intl.NumberFormat('es-ES',{style:'currency',currency:'EUR',maximumFractionDigits:0}).format(n);
     function renderSales(){const zone=document.querySelector('#sales-zone').value,rows=sales.filter(r=>zone==='all'||r[1]===zone);document.querySelector('#sales-body').replaceChildren(...rows.map(r=>{const tr=document.createElement('tr');r.forEach((v,i)=>{const td=document.createElement('td');td.textContent=i===2?euro(v):v;tr.append(td)});return tr}));document.querySelector('#sales-total').textContent=euro(rows.reduce((n,r)=>n+r[2],0))}
@@ -33,5 +30,30 @@
     function generatePrompt(){const topic=document.querySelector('#prompt-topic').value.trim()||'un tema de ofimática',level=document.querySelector('#prompt-level').value,format=document.querySelector('#prompt-format').value;document.querySelector('#prompt-output').textContent=`Actúa como un docente de Formación Profesional para el Empleo.\n\nTema: ${topic}.\nAlumnado: ${level.toLowerCase()}.\nRecurso solicitado: ${format.toLowerCase()}.\n\nFormula un objetivo de aprendizaje observable. Presenta los conocimientos previos, los materiales necesarios y las instrucciones en una secuencia clara. Utiliza un ejemplo laboral con datos ficticios y explica los términos técnicos.\n\nIncluye una propuesta de solución y criterios sencillos para comprobar el aprendizaje. Si falta información relevante, indícala antes de hacer suposiciones. No inventes referencias ni requisitos oficiales.\n\nPresenta el resultado con apartados breves y lenguaje accesible. El material se revisará antes de utilizarlo con el alumnado.`;}
     document.querySelector('#generate-prompt').addEventListener('click',generatePrompt);generatePrompt();document.querySelector('#copy-prompt').addEventListener('click',()=>{generatePrompt();copyText(document.querySelector('#prompt-output').textContent)});
     const tabs=[...document.querySelectorAll('.lesson-tab')];function selectTab(b,focus=false){tabs.forEach(t=>{const active=t===b;t.setAttribute('aria-selected',String(active));t.tabIndex=active?0:-1;document.getElementById(t.dataset.panel).hidden=!active});if(focus)b.focus()};tabs.forEach((b,i)=>{b.addEventListener('click',()=>selectTab(b));b.addEventListener('keydown',e=>{let n;if(e.key==='ArrowRight')n=(i+1)%tabs.length;else if(e.key==='ArrowLeft')n=(i+tabs.length-1)%tabs.length;else if(e.key==='Home')n=0;else if(e.key==='End')n=tabs.length-1;else return;e.preventDefault();selectTab(tabs[n],true)})});
+
+    const form=document.querySelector('#contact-form'),status=document.querySelector('#form-status'),send=document.querySelector('#contact-submit');
+    document.querySelectorAll('[data-contact]').forEach(link=>link.addEventListener('click',()=>{
+      const reason=document.querySelector('#contact-reason'),message=document.querySelector('#contact-message');
+      if(!reason.value)reason.value='Proyecto formativo o contratación';
+      if(!message.value.trim())message.value='Hola, Rubén. Me gustaría hablar contigo sobre un proyecto formativo.\n\n';
+      document.querySelector('#contact-name').focus({preventScroll:true});
+    }));
+    document.querySelectorAll('a[href="#privacidad"]').forEach(a=>a.addEventListener('click',()=>{document.querySelector('#privacidad').open=true}));
+    form.addEventListener('submit',async event=>{
+      if(!window.fetch)return;
+      event.preventDefault();
+      if(!form.reportValidity()||send.disabled)return;
+      send.disabled=true;send.textContent='Enviando…';status.textContent='Enviando tu consulta…';status.dataset.state='pending';
+      const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),25000);
+      try{
+        const response=await fetch('https://formsubmit.co/ajax/rumuva1492@gmail.com',{method:'POST',body:new FormData(form),headers:{Accept:'application/json'},signal:controller.signal});
+        const result=await response.json();
+        if(!response.ok||(result.success!==true&&result.success!=='true'))throw new Error('No se confirmó el envío');
+        status.dataset.state='success';status.textContent='El servicio de envío ha aceptado tu mensaje. Gracias por contactar; te responderé por correo.';
+        form.reset();
+      }catch(error){
+        status.dataset.state='error';status.textContent='No se ha podido confirmar el envío. Tu texto se conserva. Puedes intentarlo de nuevo o escribirme a rumuva1492@gmail.com. Si el intento quedó en curso, evita repetirlo para no duplicar el mensaje.';
+      }finally{clearTimeout(timeout);send.disabled=false;send.innerHTML='Enviar mensaje <span aria-hidden="true">↗</span>'}
+    });
     if('IntersectionObserver'in window){const links=[...nav.querySelectorAll('a[href^="#"]')];const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){links.forEach(a=>{if(a.getAttribute('href')==='#'+entry.target.id)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current')})}}},{rootMargin:'-15% 0px -65% 0px',threshold:0});links.forEach(a=>{const target=document.querySelector(a.getAttribute('href'));if(target)observer.observe(target)})}
   })();
