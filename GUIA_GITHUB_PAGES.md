@@ -21,7 +21,7 @@ Para crear un repositorio distinto:
 5. Puedes marcar **Add a README file** para que aparezca la rama inicial `main`.
 6. Pulsa **Create repository**.
 
-Al publicar la web, el correo profesional incluido será visible para sus visitantes. El CV se solicita por correo; su PDF no forma parte de esta subida.
+Al publicar la web, el correo profesional incluido será visible para sus visitantes. El CV de difusión profesional también está disponible públicamente por autorización expresa de su propietario.
 
 ## 3. Subir los archivos
 
@@ -58,7 +58,7 @@ El patrón habitual de una web de proyecto es `https://TU_USUARIO.github.io/NOMB
 - Los filtros muestran una muestra por categoría y tres al volver a Todas.
 - La práctica de ventas obtiene 1.200 € en total, 520 € en Sevilla y 680 € en Aljarafe.
 - «Copiar prompt» utiliza el tema actual.
-- «Solicitar mi CV por correo» abre la aplicación de correo.
+- «Descargar mi CV en PDF» abre o descarga el currículum.
 - El correo abre la aplicación de email que tengas configurada.
 - En el móvil, prueba el menú y la lectura de las actividades.
 

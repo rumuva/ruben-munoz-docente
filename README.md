@@ -20,6 +20,7 @@ La guía detallada está en [GUIA_GITHUB_PAGES.md](GUIA_GITHUB_PAGES.md).
 | `index.html` | Contenido y estructura de la web |
 | `assets/css/styles.css` | Diseño, colores y adaptación a móvil |
 | `assets/js/main.js` | Menú, filtros y muestras interactivas |
+| `assets/docs/CV_Ruben_Munoz_Docente.pdf` | Currículum de difusión profesional |
 | `.nojekyll` | Publicación estática sin procesar la web con Jekyll |
 
 ## Abrir en el ordenador
@@ -31,7 +32,7 @@ Abre `index.html` en Chrome, Edge o Firefox, manteniendo `assets/` junto al arch
 - Textos, experiencia, formación y correo: `index.html`.
 - Colores: variables `:root` en `assets/css/styles.css`.
 - Actividades, plantillas y correo del botón Copiar: `assets/js/main.js`.
-- CV: el sitio ofrece solicitarlo por correo; el PDF personal no se incluye en el repositorio público.
+- CV: sustituye el PDF manteniendo su ruta o actualiza el enlace de descarga en `index.html`.
 - El correo también figura en los datos estructurados y en la información de privacidad del HTML.
 
 El monograma RM es tipográfico; se puede sustituir por el logotipo original. Las demostraciones usan datos ficticios y se identifican como tales. El constructor de prompts funciona con una plantilla local, sin conexión a un servicio de IA.
@@ -42,4 +43,4 @@ Paquete preparado el 22/10/2026. Incluye las correcciones de la auditoría funci
 
 Repositorio de destino: `rumuva/ruben-munoz-docente`. Los archivos están preparados para publicarse desde `main` y `/(root)`; el estado de GitHub Pages se comprueba en Settings → Pages.
 
-El archivo PDF del CV queda fuera de esta subida. El sitio incluye un enlace para solicitarlo por correo.
+El propietario ha autorizado expresamente publicar el PDF de su CV, con su trayectoria profesional y correo, en este repositorio público.
