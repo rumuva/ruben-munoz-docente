@@ -28,3 +28,10 @@ nav .nav-contact[aria-current]{color:white}
 .trust .trust-label{color:#e4c39c}
 .trust .trust-item{color:#faf8f4}
 .trust .trust-item svg{color:#e4c39c}
+
+/* Filtros del portfolio coordinados con la franja azul petróleo. */
+.filter{color:#245565;border-color:#245565}
+.filter:hover{background:#e7eff1}
+.filter[aria-pressed="true"]{background:#245565;border-color:#245565;color:#faf8f4}
+.filter[aria-pressed="true"]:hover{background:#1c4957;border-color:#1c4957}
+.filter:focus-visible{outline-color:#245565}
