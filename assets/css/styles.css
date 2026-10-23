@@ -35,3 +35,83 @@ nav .nav-contact[aria-current]{color:white}
 .filter[aria-pressed="true"]{background:#245565;border-color:#245565;color:#faf8f4}
 .filter[aria-pressed="true"]:hover{background:#1c4957;border-color:#1c4957}
 .filter:focus-visible{outline-color:#245565}
+
+/* Portfolio: vistas previas y actividades desplegables. */
+#portfolio .filter-list{gap:10px;margin-bottom:28px}
+#portfolio .filter{font-size:12px;padding:9px 16px;min-height:40px}
+#portfolio .projects{display:grid;gap:20px}
+#portfolio .project{border:1px solid #d5e0e1;border-radius:14px;background:#fff;overflow:hidden;box-shadow:0 3px 12px rgba(36,85,101,.035);transition:border-color .18s,box-shadow .18s}
+#portfolio .project:last-child{border:1px solid #d5e0e1}
+#portfolio .project:hover{border-color:#8faeb7;box-shadow:0 8px 24px rgba(36,85,101,.07)}
+#portfolio .project[open]{border-color:#8faeb7}
+#portfolio .project>.project-summary{display:grid;grid-template-columns:230px minmax(0,1fr) 38px;gap:28px;align-items:center;padding:25px}
+#portfolio .project>.project-summary:focus-visible{outline:3px solid #245565;outline-offset:-5px;border-radius:14px}
+#portfolio .project[open]>.project-summary{padding-bottom:25px}
+#portfolio .project-body{min-width:0}
+#portfolio .project-meta{display:flex;align-items:center;flex-wrap:wrap;gap:10px 14px;letter-spacing:0;text-transform:none;margin-bottom:12px}
+#portfolio .project-category{background:#eaf1f2;color:#245565;font-size:10px;font-weight:700;border-radius:5px;padding:4px 9px}
+#portfolio .project-kind{display:inline-flex;align-items:center;gap:6px;font-size:10px;color:#667674}
+#portfolio .project-kind>span{width:5px;height:5px;border-radius:50%;background:#638a80}
+#portfolio .project h3{font-size:27px;line-height:1.2;letter-spacing:-.035em;margin:0 0 12px;color:#234952}
+#portfolio .project-body>p{font-size:13px;line-height:1.7;color:#626e70;max-width:54ch}
+#portfolio .project-footer{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:22px;flex-wrap:wrap}
+#portfolio .project-skills{font-size:10px;color:#617778;letter-spacing:.01em}
+#portfolio .project-open{display:inline-flex;align-items:center;gap:12px;border-radius:6px;background:#245565;color:#faf8f4;font-size:11px;font-weight:600;padding:9px 13px;margin:0;line-height:1.5;white-space:nowrap}
+#portfolio .project-open .close-label{display:none}
+#portfolio .project[open] .project-open .close-label{display:inline}
+#portfolio .project[open] .project-open .open-label{display:none}
+#portfolio .project[open] .project-open{background:#eaf1f2;color:#245565}
+#portfolio .expand{display:grid;place-items:center;width:36px;height:36px;border:1px solid #d5e0e1;border-radius:50%;font-size:23px;font-weight:400;color:#245565;line-height:1;align-self:center;transition:transform .18s}
+#portfolio .project[open] .expand{transform:rotate(45deg);background:#eaf1f2;border-color:#d5e0e1}
+#portfolio .sample-preview{display:block;height:186px;min-width:0;padding:16px;border:1px solid #d9e5e6;border-radius:10px;background:#edf4f4;overflow:hidden;color:#245565;position:relative;user-select:none}
+#portfolio .preview-topline{display:flex;align-items:center;gap:7px;margin-bottom:17px;font-size:7px;font-weight:700;letter-spacing:.08em;white-space:nowrap}
+#portfolio .preview-symbol{font-size:18px;line-height:1;font-weight:400}
+#portfolio .sample-index{margin-left:auto;font-size:9px;color:#72898d;font-weight:400}
+#portfolio .preview-sheet{display:grid;grid-template-columns:1.25fr 1fr .8fr;border-top:1px solid #d6e1e2;border-left:1px solid #d6e1e2;border-radius:4px;overflow:hidden;transform:rotate(-2deg);background:#fff}
+#portfolio .preview-sheet>span{display:block;font-size:7px;line-height:1.3;padding:7px 5px;border-right:1px solid #d6e1e2;border-bottom:1px solid #d6e1e2;color:#536e73;white-space:nowrap}
+#portfolio .preview-sheet>span:nth-child(-n+3){background:#245565;color:#faf8f4;font-weight:600}
+#portfolio .preview-sheet>span:nth-child(3n){text-align:right}
+#portfolio .preview-sheet>.preview-cell{background:#eaf1f2;box-shadow:inset 0 0 0 1px #477580;color:#245565;font-weight:700}
+#portfolio .preview-formula{display:flex;align-items:center;gap:8px;font-size:8px;margin-top:12px;color:#5f7b80}
+#portfolio .preview-formula>b{font-family:Georgia,serif;font-size:14px;color:#245565}
+#portfolio .preview-ai{background:#f4efe7;border-color:#e8e0d4}
+#portfolio .preview-ai .preview-topline{margin-bottom:14px}
+#portfolio .preview-prompt-line{display:block;background:white;border:1px solid #e0ddd5;border-radius:5px;padding:9px;font-size:10px;line-height:1.4}
+#portfolio .preview-prompt-tags{display:flex;gap:5px;margin-top:10px}
+#portfolio .preview-prompt-tags>span{font-size:7px;background:#fff;padding:3px 6px;border:1px solid #e0ddd5;border-radius:10px}
+#portfolio .preview-writing{display:grid;gap:5px;margin-top:12px}
+#portfolio .preview-writing>i{display:block;width:92%;height:3px;background:#d8d5ca;border-radius:2px}
+#portfolio .preview-writing>i:nth-child(2){width:79%}
+#portfolio .preview-writing>i:nth-child(3){width:57%}
+#portfolio .preview-prompt-footer{display:flex;align-items:center;justify-content:space-between;font-size:7px;margin-top:10px}
+#portfolio .preview-prompt-footer>b{font-size:12px}
+#portfolio .preview-design{background:#edf2ef;border-color:#dae5df}
+#portfolio .preview-route{display:grid;gap:8px;position:relative}
+#portfolio .preview-route>span{display:flex;align-items:center;gap:8px;background:#fff;border:1px solid #dce5df;border-radius:6px;padding:7px 9px;font-size:8px;line-height:1.4}
+#portfolio .preview-route>span:nth-child(2){margin-left:12px}
+#portfolio .preview-route>span:nth-child(3){margin-left:24px}
+#portfolio .preview-route b{display:grid;place-items:center;width:17px;height:17px;background:#e8efeb;color:#346757;border-radius:50%;font-size:8px;font-weight:600;flex-shrink:0}
+#portfolio .demo-content{border-top:1px solid #dbe5e7;background:#f5f8f7;padding:28px 32px 32px}
+#portfolio .demo-content>p{font-size:14px;max-width:80ch;color:#596e70}
+#portfolio .case-meta{gap:12px;margin:22px 0;grid-template-columns:repeat(2,minmax(0,1fr))}
+#portfolio .case-meta>div{background:#fff;border:1px solid #e0e8e6;border-radius:8px;padding:15px 17px;font-size:12px;line-height:1.6}
+#portfolio .case-meta b{font-size:10px;text-transform:uppercase;letter-spacing:.07em;color:#245565;margin-bottom:7px}
+#portfolio .demo-panel{border:1px solid #dbe5e7;border-radius:10px;padding:27px;background:white}
+#portfolio .demo-panel h3{font-size:24px;color:#245565;margin-bottom:12px}
+#portfolio .demo-panel>p{font-size:13px;line-height:1.75}
+#portfolio .demo-panel label{color:#245565}
+#portfolio #sales-zone{max-width:300px;display:block;background:#f7f9f8;border-color:#c9d8db}
+#portfolio .table-wrap{border:1px solid #dbe5e7;border-radius:8px}
+#portfolio th{background:#245565;color:#faf8f4;font-size:11px;padding:13px 15px}
+#portfolio td{padding:13px 15px;border-bottom-color:#e5edec;font-size:12px}
+#portfolio tbody tr:nth-child(even){background:#f6f9f8}
+#portfolio tbody tr:last-child td{border-bottom:0}
+#portfolio .demo-result{background:#eaf1f2;border-radius:8px;margin:15px 0 20px;padding:18px;align-items:center;color:#245565}
+#portfolio .demo-result strong{color:#245565;font-size:26px}
+#portfolio #show-formula{color:#245565;border-color:#a4bec5;background:white;font-size:12px}
+#portfolio .answer-text{background:#eef4f4;border-left-color:#245565;border-radius:0 6px 6px 0;padding:18px;line-height:1.8}
+#portfolio .case-bottom{line-height:1.75;padding:0 3px;margin-top:20px}
+#portfolio .portfolio-note{align-items:flex-start;padding:17px 20px;border-radius:8px;background:#eff3f2;color:#5a7173;line-height:1.7;margin-top:25px}
+#portfolio .portfolio-note svg{color:#245565;margin-top:2px}
+@media(max-width:1000px){#portfolio .project>.project-summary{grid-template-columns:195px minmax(0,1fr) 30px;gap:22px;padding:22px}#portfolio .project h3{font-size:25px}#portfolio .project-footer{gap:12px;margin-top:18px}#portfolio .project-skills{font-size:9px}#portfolio .sample-preview{padding:12px;height:180px}#portfolio .preview-topline{font-size:6px}#portfolio .expand{width:30px;height:30px;font-size:21px}}
+@media(max-width:760px){#portfolio .project>.project-summary{grid-template-columns:minmax(0,1fr) 30px;gap:18px 14px;padding:19px}#portfolio .project[open]>.project-summary{padding-bottom:19px}#portfolio .sample-preview{grid-column:1/-1;height:164px;padding:15px 20px;max-width:none}#portfolio .preview-topline{font-size:7px;margin-bottom:12px}#portfolio .preview-sheet{grid-template-columns:1.3fr 1fr .85fr;max-width:300px;transform:rotate(-1deg)}#portfolio .preview-sheet>span{font-size:8px;padding:5px 7px}#portfolio .preview-formula{font-size:8px;margin-top:8px}#portfolio .preview-ai .preview-topline{margin-bottom:10px}#portfolio .preview-prompt-line{max-width:300px;padding:7px 9px}#portfolio .preview-prompt-tags{margin-top:7px}#portfolio .preview-writing{gap:4px;margin-top:8px;max-width:300px}#portfolio .preview-prompt-footer{max-width:300px;margin-top:7px}#portfolio .preview-route{max-width:300px;gap:6px}#portfolio .preview-route>span{padding:5px 9px}#portfolio .project-meta{gap:8px;margin-bottom:12px}#portfolio .project-kind{font-size:9px}#portfolio .project-category{font-size:9px}#portfolio .project h3{font-size:24px;line-height:1.22}#portfolio .project-body>p{font-size:13px}#portfolio .project-footer{align-items:flex-start;flex-direction:column;gap:14px;margin-top:15px}#portfolio .project-skills{font-size:10px}#portfolio .project-open{padding:10px 13px;font-size:11px}#portfolio .expand{align-self:start;margin-top:5px}#portfolio .demo-content{padding:21px 17px}#portfolio .case-meta{grid-template-columns:1fr;gap:9px}#portfolio .case-meta>div{padding:12px 14px}#portfolio .demo-panel{padding:18px 14px}#portfolio .demo-panel h3{font-size:22px}#portfolio .demo-result{padding:14px;gap:15px;font-size:12px}#portfolio .demo-result strong{font-size:24px}#portfolio th,#portfolio td{padding:11px 10px}#portfolio .portfolio-note{padding:15px;font-size:10px}#portfolio .filter-list{gap:8px}#portfolio .filter{font-size:10px;padding:8px 12px;min-height:37px}}
