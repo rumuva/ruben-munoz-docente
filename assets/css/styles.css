@@ -115,3 +115,45 @@ nav .nav-contact[aria-current]{color:white}
 #portfolio .portfolio-note svg{color:#245565;margin-top:2px}
 @media(max-width:1000px){#portfolio .project>.project-summary{grid-template-columns:195px minmax(0,1fr) 30px;gap:22px;padding:22px}#portfolio .project h3{font-size:25px}#portfolio .project-footer{gap:12px;margin-top:18px}#portfolio .project-skills{font-size:9px}#portfolio .sample-preview{padding:12px;height:180px}#portfolio .preview-topline{font-size:6px}#portfolio .expand{width:30px;height:30px;font-size:21px}}
 @media(max-width:760px){#portfolio .project>.project-summary{grid-template-columns:minmax(0,1fr) 30px;gap:18px 14px;padding:19px}#portfolio .project[open]>.project-summary{padding-bottom:19px}#portfolio .sample-preview{grid-column:1/-1;height:164px;padding:15px 20px;max-width:none}#portfolio .preview-topline{font-size:7px;margin-bottom:12px}#portfolio .preview-sheet{grid-template-columns:1.3fr 1fr .85fr;max-width:300px;transform:rotate(-1deg)}#portfolio .preview-sheet>span{font-size:8px;padding:5px 7px}#portfolio .preview-formula{font-size:8px;margin-top:8px}#portfolio .preview-ai .preview-topline{margin-bottom:10px}#portfolio .preview-prompt-line{max-width:300px;padding:7px 9px}#portfolio .preview-prompt-tags{margin-top:7px}#portfolio .preview-writing{gap:4px;margin-top:8px;max-width:300px}#portfolio .preview-prompt-footer{max-width:300px;margin-top:7px}#portfolio .preview-route{max-width:300px;gap:6px}#portfolio .preview-route>span{padding:5px 9px}#portfolio .project-meta{gap:8px;margin-bottom:12px}#portfolio .project-kind{font-size:9px}#portfolio .project-category{font-size:9px}#portfolio .project h3{font-size:24px;line-height:1.22}#portfolio .project-body>p{font-size:13px}#portfolio .project-footer{align-items:flex-start;flex-direction:column;gap:14px;margin-top:15px}#portfolio .project-skills{font-size:10px}#portfolio .project-open{padding:10px 13px;font-size:11px}#portfolio .expand{align-self:start;margin-top:5px}#portfolio .demo-content{padding:21px 17px}#portfolio .case-meta{grid-template-columns:1fr;gap:9px}#portfolio .case-meta>div{padding:12px 14px}#portfolio .demo-panel{padding:18px 14px}#portfolio .demo-panel h3{font-size:22px}#portfolio .demo-result{padding:14px;gap:15px;font-size:12px}#portfolio .demo-result strong{font-size:24px}#portfolio th,#portfolio td{padding:11px 10px}#portfolio .portfolio-note{padding:15px;font-size:10px}#portfolio .filter-list{gap:8px}#portfolio .filter{font-size:10px;padding:8px 12px;min-height:37px}}
+
+/* Trayectoria: cabecera amplia y experiencias agrupadas. */
+#experiencia{background:#f1f4f2;border-top:1px solid #e0e7e3;border-bottom:1px solid #e0e7e3}
+#experiencia .experience-header{display:grid;grid-template-columns:1.15fr 1fr;gap:70px;align-items:center;margin-bottom:43px}
+#experiencia .experience-header .section-title{margin:0;line-height:1.14}
+#experiencia .experience-header-copy>p{font-size:14px;line-height:1.8;color:#5f7071;max-width:47ch}
+#experiencia .experience-cv{display:inline-flex;justify-content:flex-start;gap:14px;background:#245565;border-color:#245565;color:#faf8f4;padding:13px 17px;margin-top:23px;min-width:240px;border-radius:8px}
+#experiencia .experience-cv:hover{background:#1c4957;border-color:#1c4957}
+#experiencia .experience-cv>span:nth-child(2){font-size:13px;line-height:1.4;text-align:left}
+#experiencia .experience-cv small{display:block;font-size:10px;font-weight:400;opacity:.8;line-height:1.6;margin-top:2px}
+#experiencia .experience-cv>span:last-child{font-size:20px;margin-left:auto;padding-left:18px;font-weight:400}
+#experiencia .cv-file-icon{display:flex}
+#experiencia .cv-file-icon svg{width:24px;height:28px}
+#experiencia .experience-group+.experience-group{margin-top:32px}
+#experiencia .experience-group-heading{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+#experiencia .experience-group-heading:after{content:'';height:1px;background:#d6e0db;flex:1}
+#experiencia .experience-group-heading h3{font-size:15px;letter-spacing:-.01em;font-weight:600;color:#245565;line-height:1.4}
+#experiencia .experience-group-heading>span{font-size:10px;color:#6b7b7a;line-height:1.4}
+#experiencia .career-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+#experiencia .career-card{display:flex;flex-direction:column;min-width:0;padding:26px 28px;border:1px solid #d8e2dc;background:#fafbf9;border-radius:12px}
+#experiencia .career-card-featured{background:#fff;border-top:3px solid #245565;box-shadow:0 4px 18px rgba(36,85,101,.035)}
+#experiencia .career-card-top{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:20px}
+#experiencia .career-card-icon{display:grid;place-items:center;width:44px;height:44px;border-radius:10px;background:#eaf1f2;color:#245565}
+#experiencia .career-card-icon svg{width:25px;height:25px}
+#experiencia .career-card-date{font-size:12px;line-height:1.4;font-weight:600;color:#245565;background:#eaf1f2;border:1px solid #d9e6e8;border-radius:30px;padding:7px 12px;letter-spacing:.02em;white-space:nowrap}
+#experiencia .career-card h3{font-size:25px;line-height:1.24;letter-spacing:-.035em;color:#254e59;min-height:62px;margin:0 0 12px}
+#experiencia .career-card-role{font-size:12px;line-height:1.7;font-weight:600;color:#a92f3b;margin:0 0 15px;min-height:41px}
+#experiencia .career-card-description{font-size:13px;line-height:1.8;color:#5c7073;margin:0 0 22px}
+#experiencia .career-card-tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:auto;padding-top:3px}
+#experiencia .career-card-tags>span{display:inline-block;border:1px solid #dae5e4;border-radius:5px;background:#f4f8f7;font-size:10px;line-height:1.5;color:#4d6e72;padding:4px 8px}
+#experiencia .career-context{display:flex;align-items:center;gap:7px;margin-top:18px;padding-top:14px;border-top:1px solid #e5ece9;font-size:10px;color:#6c8181;line-height:1.5}
+#experiencia .career-context:before{content:'';width:5px;height:5px;background:#729789;border-radius:50%;flex-shrink:0}
+#experiencia .experience-group-complementary .career-card{padding:23px 26px}
+#experiencia .experience-group-complementary .career-card-top{margin-bottom:16px}
+#experiencia .experience-group-complementary .career-card-icon{width:36px;height:36px;background:#ecf1ed;color:#527568;border-radius:8px}
+#experiencia .experience-group-complementary .career-card-icon svg{width:21px;height:21px}
+#experiencia .experience-group-complementary .career-card h3{font-size:22px;min-height:0}
+#experiencia .experience-group-complementary .career-card-role{color:#4e6f73;font-size:11px;min-height:0;margin-bottom:12px}
+#experiencia .experience-group-complementary .career-card-description{font-size:12px;line-height:1.8;margin-bottom:18px}
+@media(max-width:1000px){#experiencia .experience-header{gap:40px}#experiencia .career-card{padding:23px}#experiencia .career-card h3{font-size:23px;min-height:86px}#experiencia .career-card-role{min-height:41px}#experiencia .experience-group-complementary .career-card{padding:22px}#experiencia .experience-group-heading>span{font-size:9px}}
+@media(max-width:760px){#experiencia .experience-header{grid-template-columns:1fr;gap:24px;margin-bottom:34px}#experiencia .experience-header-copy>p{font-size:13px;max-width:none}#experiencia .experience-cv{margin-top:18px;min-height:56px}#experiencia .experience-group-heading{align-items:flex-start;flex-direction:column;gap:4px;margin-bottom:15px}#experiencia .experience-group-heading:after{display:none}#experiencia .experience-group-heading h3{font-size:16px}#experiencia .experience-group-heading>span{font-size:10px}#experiencia .career-grid{grid-template-columns:1fr;gap:15px}#experiencia .career-card{padding:22px}#experiencia .career-card-top{margin-bottom:18px}#experiencia .career-card h3{font-size:25px;min-height:0;margin-bottom:12px}#experiencia .career-card-role{min-height:0;font-size:12px;line-height:1.7}#experiencia .career-card-description{font-size:13px;margin-bottom:20px}#experiencia .career-card-tags{gap:7px}#experiencia .career-card-tags>span{font-size:10px}#experiencia .experience-group+.experience-group{margin-top:30px}#experiencia .experience-group-complementary .career-card{padding:21px}#experiencia .experience-group-complementary .career-card h3{font-size:23px}}
+@media print{#experiencia{background:white}#experiencia .career-card{break-inside:avoid;box-shadow:none}#experiencia .experience-header{gap:25px}}
