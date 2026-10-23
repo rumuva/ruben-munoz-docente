@@ -22,3 +22,9 @@ nav .nav-contact[aria-current]{color:white}
 .prompt-explanation{max-width:78ch}.prompt-steps{margin:18px 0 25px;padding:18px 18px 18px 36px;background:var(--paper);font-size:13px;border-left:2px solid var(--red)}.prompt-steps li+li{margin-top:5px}.field-hint{font-size:11px!important;margin:-8px 0 20px!important;color:var(--muted)}.prompt-status{font-size:12px!important;margin:15px 0!important;color:var(--red)!important;min-height:0}.prompt-status:empty,.prompt-error:empty{display:none}.prompt-error{font-size:12px!important;color:var(--red)!important;margin:0 0 14px!important}.prompt-result{border-top:1px solid var(--line);margin-top:22px;padding-top:22px;scroll-margin-top:110px}.prompt-result h4{font-size:22px;margin-bottom:14px}.prompt-output{display:block;min-height:280px;max-height:600px;resize:vertical;line-height:1.65;font-family:inherit;font-size:13px;margin:0 0 18px}.prompt-actions{display:flex;align-items:center;gap:22px;flex-wrap:wrap}.prompt-actions .text-link{font-size:12px}.prompt-next-step{font-size:12px!important;background:var(--paper);padding:15px;margin-top:18px!important}.prompt-actions button:disabled{cursor:default;opacity:.5}.prompt-builder label{margin-top:3px}.prompt-builder input[aria-invalid=true]{border-color:var(--red)}
 
 .select-prompt{background:none;border:0;border-bottom:1px solid var(--red);font:inherit;cursor:pointer;padding:0 0 5px;color:inherit}
+
+/* Franja de credenciales: azul petróleo y acentos arena. */
+.trust{background:#245565;color:#faf8f4;border-top-color:#245565;border-bottom-color:#245565}
+.trust .trust-label{color:#e4c39c}
+.trust .trust-item{color:#faf8f4}
+.trust .trust-item svg{color:#e4c39c}
